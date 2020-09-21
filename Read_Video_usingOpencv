@@ -1,0 +1,10 @@
+import cv2
+#read the video from our local drive
+capture= cv2.VideoCapture("F:/images/myvideo.mp4")
+#video is a sequence of images it calculate frames
+while True:
+    success,img =capture.read()# success is a boolean variable the frame is true or false
+    cv2.imshow("Video",img)
+    if cv2.waitKey(1) & 0xFF == ord('q'):
+        #When we are close the output window to press 'q' button 
+        break
