@@ -1,0 +1,9 @@
+import cv2
+cap=cv2.VideoCapture(0)
+# Here i am open webcam through using this program (my laptop webcam)
+# If you use external webcam to replace the --> VideoCapture(1)
+while True:
+    success,img =cap.read()
+    cv2.imshow("Video",img)
+    if cv2.waitKey(1) & 0xFF ==ord('q'):
+        break
