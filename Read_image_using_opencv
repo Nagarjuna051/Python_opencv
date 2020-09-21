@@ -1,0 +1,8 @@
+import cv2
+#we are import the module cv2
+#read image from loacl drive or any other place we give the path only.
+#my path is 'F:\face_recognition\images'
+image = cv2.imread("F:/face_recognition/images/naga1.jpg")
+#now show the output
+cv2.imshow("output",image)
+cv2.waitKey(0)
